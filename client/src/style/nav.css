@@ -115,7 +115,7 @@
     }
   
     .nav-menu.active {
-        
+      
       background: rgb(255, 251, 254);;
       left: 0px;
       opacity: 1;
@@ -128,12 +128,17 @@
       border: none;
     }
     .nav-links {
-      display: flex;
-      justify-content:center;
-      
+      position: relative;
+      right:200px;
       padding: 1.5rem;
       width: 100%;
       display: table;
+    }
+
+    .nav-links:hover {
+      transform: translateX(20px) ;
+      transition: all 0.5s ease;
+
     }
   
     .nav-icon {

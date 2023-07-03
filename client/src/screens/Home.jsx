@@ -3,9 +3,12 @@ import Clients from '../components/clients'
 import { NavLink } from 'react-router-dom'
 import Vision from '../components/Vision'
 import Agile from '../components/Agile'
+import HomeCarousel from './Carousel'
+import Images from './Images'
 const Home = () => {
   return (
-    <div>Home
+    <div>
+      <Images/>
       <Clients/>
       <Vision/>
       <Agile/>

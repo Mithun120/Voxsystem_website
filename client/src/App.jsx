@@ -7,10 +7,12 @@ import Blog from './screens/Blog'
 import Contact from './screens/Contact'
 import Navbar from './screens/Navbar'
 import Footer from './screens/Footer'
+import Loader from './screens/Loader'
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+      <Loader/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />}/>
