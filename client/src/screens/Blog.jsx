@@ -2,6 +2,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Contact from './Contact';
 import { NavLink } from 'react-router-dom';
+
+import '../style/blog.css'
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 
@@ -20,10 +22,10 @@ const Blog = () => {
   }; 
 
   return (<>
-    <div>
+    <div style={{backgroundColor:'#1F386E'}}>
       <h2>Blog List</h2>
       {blogs.map((blog) => (
-        <div key={blog._id}>
+        <div key={blog._id} className='blog'>
           <h3>{blog.blogTitle}</h3>
           <p>{blog.blogDesc}</p>
           {/* <p>Posted at: {new Date(blog.timestamp).toLocaleString()}</p> */}

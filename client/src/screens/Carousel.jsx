@@ -12,6 +12,10 @@ const Carousel = ({ images }) => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
   
+
+
+
+
   if (!images || images.length === 0) {
     return <div>No images found</div>;
   }
@@ -24,7 +28,12 @@ const Carousel = ({ images }) => {
             key={index}
             className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
           >
+         <div className="div">
+
             <img src={image} alt={`Image ${index + 1}`} />
+            </div>
+           
+         
           </div>
         ))}
       </div>
