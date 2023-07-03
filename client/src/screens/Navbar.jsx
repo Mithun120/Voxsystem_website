@@ -52,23 +52,45 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/"
+                to="/about"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
                 >
-                Services
+                About
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
-                to="/"
+                to="/project"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
                 >
-                Contact Us
+                  Project
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/blog"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+                >
+                  Blog
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/contact"
+                activeClassName="active"
+                className="nav-links"
+                onClick={click ? handleClick : null}
+                >
+                  Contact
               </NavLink>
             </li>
         </ul>
