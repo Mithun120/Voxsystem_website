@@ -1,0 +1,146 @@
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transition: background-color 0.9s ease-out;
+    display:flex;
+    padding:0 20px;
+    z-index:20;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar.scrolled {
+    background-color: #ffffff; 
+  }
+
+
+  .bg-img{
+    width: 100%;
+    height: 100%;
+  }
+
+.nav-logo {
+    display: flex;
+    color: #1f1f1e;
+    align-items:stretch;
+    margin-left: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+  }
+  
+  .nav-logo img{
+    margin-top: 30px;
+    width:70px;
+    height:70px;
+  }
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+  }
+
+  .icon 
+  {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .fa-code {
+    margin-left: 1rem;
+  }
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    font-size:20px;
+    font-weight: 700;
+    text-decoration:none;
+    color:#0a0a0a;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+  }
+  .fa-code {
+    margin-left: 1rem;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    line-height: 40px;
+    margin-right: 1rem;
+}
+
+.nav-item:hover {
+    text-decoration: none;
+  }
+  
+  .nav-item.active {
+    text-decoration: none;
+    color: #0d0d0d;
+    border: 1px solid #9F2B68;
+  }
+  
+  .nav-icon {
+    margin-right: 50px;
+    display: none;
+  }
+
+  @media screen and (max-width: 960px) {
+    
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #fff;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+        
+      background: rgb(255, 251, 254);;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      text-decoration: none;
+    }
+    .nav-item .active {
+      color: #0d0d0d;
+      border: none;
+    }
+    .nav-links {
+      padding: 1.5rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #1a0303;
+    }
+  }
